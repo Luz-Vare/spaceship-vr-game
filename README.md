@@ -29,9 +29,9 @@ En nuestro caso lo hemos llamado **SceneManagerScript**, este script hace uso ex
 
 Además disponemos de **GameInfo**, (cuyo comportamiento es similar a SceneManagerScript, solo hay una instancia y existe en todas las escenas). Este script mantiene el score de los minijuegos así como si han sido completados o no. Además en cada escena de un minijuego existe una consola "output" que muestra el score de cada minijuego. Este script se encarga de actualizar y mostrar el score del minijuego en estas consolas.
 
-
 Por otro lado, disponemos de una clara programación orientada a eventos, sobretodo con los eventos de VR, practicamente la totalidad de la interacción del usuario con el juego se basa en eventos cuando pasa la mirada por encima de los GameObjects.
 
+Hemos empleado las **Coroutine de Unity**, con ellas conseguimos ejecutar de forma no instantánea algunas sentencias, como por ejemplo que las transiciones de sonido así como las del fundido a negro se hagan de forma suave.
 
 Por último hemos usado **el patrón delegate** Concretamente lo hemos utilizado para disparar un evento cuando todos los minijuegos han sido completados. Cuando se lanza este evento empiezan a lanzarse fuegos artificiales y una música de victoria empieza a sonar.
 
